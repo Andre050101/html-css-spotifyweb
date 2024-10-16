@@ -1,0 +1,71 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variables*/
+:root {
+    --color-dark: #141922;
+    --color-darkgrey: #282828;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-lightgrey: #c1c1c1;
+    --color-highlight: #9ae22d;
+    --color-redcolor: #ca1717;
+}
+.debug {
+    border: 1px solid red;
+}
+
+/*Utilities*/
+/*Flex*/
+.d-flex {
+    display: flex;
+}
+
+.f-dir-column {
+    flex-direction: column;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.a-it-center{
+    align-items: center;
+}
+
+/*Selectors*/
+footer{
+    background-color: var(--color-darkgrey);
+    color: white;
+    height: 80px;
+}
+
+/*ID Selectors*/
+#sidebar{
+    background-color: #000000;
+    color: white;
+    height: 100vh;
+    width: 230px;
+}
+#mainbar{
+    width: calc(100% - 230px);
+    background-color: var(--color-dark);
+}
+
+#mainpage{
+    height: calc(100% - 60px);
+}
+/*Classes*/
+.header{
+    background-color: black;
+    opacity: 60%;
+    height: 60px;
+}
