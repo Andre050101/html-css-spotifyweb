@@ -71,6 +71,16 @@ footer{
 #mainpage{
     height: calc(100% - 60px);
 }
+#logo{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img{
+    height: 75%;
+}
 /*Classes*/
 .header{
     background-color: black;
