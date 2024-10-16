@@ -74,12 +74,24 @@ footer{
 #logo{
     height: 70px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding-left:15px;
 }
 
 #logo img{
     height: 75%;
+}
+#icons img{
+   width: 35px;
+}
+#sidebar span{
+    font-weight: 800;
+}
+#white span{
+    color:white;
+}
+#grey span{
+    color:#808080;
 }
 /*Classes*/
 .header{
@@ -89,4 +101,8 @@ footer{
     position: sticky;
     top: 0;
     left: 0;
+}
+
+.grey{
+    filter:invert(55%) sepia(0%) saturate(271%) hue-rotate(178deg) brightness(91%) contrast(84%);
 }
