@@ -42,10 +42,18 @@
 }
 
 /*Selectors*/
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #282828;
+    color: var(--color-light);
+}
+
 footer{
     background-color: var(--color-darkgrey);
     color: white;
     height: 80px;
+    position: sticky;
+    bottom: 0;
 }
 
 /*ID Selectors*/
@@ -67,5 +75,8 @@ footer{
 .header{
     background-color: black;
     opacity: 60%;
-    height: 60px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
