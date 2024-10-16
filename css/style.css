@@ -41,6 +41,13 @@
     align-items: center;
 }
 
+.a-it-flex-end{
+    align-items: flex-end;
+}
+.jc-end{
+    justify-content:flex-end;
+}
+
 /*Selectors*/
 body{
     font-family: "Montserrat", sans-serif;
@@ -55,6 +62,10 @@ footer{
     position: sticky;
     bottom: 0;
 }
+ul{
+    list-style: none;
+}
+
 
 /*ID Selectors*/
 #sidebar{
@@ -69,7 +80,8 @@ footer{
 }
 
 #mainpage{
-    height: calc(100% - 60px);
+    height: calc(100% - 140px);
+    overflow-y: scroll;
 }
 #logo{
     height: 70px;
@@ -77,7 +89,6 @@ footer{
     align-items: center;
     padding-left:15px;
 }
-
 #logo img{
     height: 75%;
 }
@@ -90,9 +101,25 @@ footer{
 #white span{
     color:white;
 }
-#grey span{
-    color:#808080;
+#white img{
+    filter: invert(43%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(99%) contrast(103%);
 }
+#grey span{
+    color:#a3a3a3;
+}
+#sidebar ul li{
+    color: #a3a3a3;
+    font-weight: 800;
+}
+#sidebar ul{
+    gap: 10px;
+}
+#endsidebar{
+    height: 35%;
+    display: flex;
+    align-items: end;
+}
+
 /*Classes*/
 .header{
     background-color: black;
@@ -104,5 +131,27 @@ footer{
 }
 
 .grey{
-    filter:invert(55%) sepia(0%) saturate(271%) hue-rotate(178deg) brightness(91%) contrast(84%);
+    filter:invert(58%) sepia(98%) saturate(1%) hue-rotate(350deg) brightness(91%) contrast(99%);
+}
+.padding{
+    padding: 5px;
+}
+.plus{
+    background-color: #a3a3a3;
+    color: black;
+    padding: 8px;
+}
+.white{
+    color: white;
+}
+.height70px{
+    height: 70px;
+}
+.btn{
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    border-style: groove;
+    padding: 10px 50px;
+    border-radius: 20px;
 }
