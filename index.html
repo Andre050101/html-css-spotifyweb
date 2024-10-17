@@ -13,115 +13,71 @@
         <link rel="stylesheet" href="./css/style.css">
         <title>Spotify Web</title>
     </head>
-    <body>
-        <main>
-            <div class="debug d-flex">
-                <div id="sidebar" class="debug">
-                    <div id="logo" class="debug">
-                        <img src="img/logo.svg" alt="">
-                    </div>
-                    <div id="icons" class="debug">
-                        <div class="debug d-flex a-it-center">
-                            <div id="white" class="debug">
-                                <img src="img/home.svg" alt="">
-                            </div>
-                            <div id="white" class="debug">
-                                <span>Home</span>
-                            </div>
-                        </div>
-                        <div class="debug d-flex a-it-center">
-                            <div>
-                                <img src="img/search.svg" alt="" class="grey">
-                            </div>
-                            <div id="grey">
-                                <span>Cerca</span>
-                            </div>
-                        </div>
-                        <div class="debug d-flex a-it-center">
-                            <div>
-                                <img src="img/libreria.svg" alt="" class="grey">
-                            </div>
-                            <div id="grey">
-                                <span>La tua libreria</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="debug">
-                        <ul class="padding d-flex f-dir-column">
-                            <li><span class="white"><strong>PLAYLIST</strong></span></li>
-                            <li>
-                                <i class="fa-solid fa-plus plus"></i> <span>Crea playlist</span>
-                            </li>
-                            <li>
-                                <span>Nome Playlist</span>
-                            </li>
-                            <li>
-                                <span>Nome Playlist</span>
-                            </li>
-                            <li>
-                                <span>Nome Playlist</span>
-                            </li>
-                            <li>
-                                <span>Nome Playlist</span>
-                            </li>
-                            <li>
-                                <span>Nome Playlist</span>
-                            </li>
-                            <li>
-                                <span>Nome Playlist</span>
-                            </li>
-                            <li>
-                                <span>Nome Playlist</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="endsidebar" class="debug d-flex">
-                        <ul>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="mainbar" class="debug">
-                    <div class="debug header">
-                        <div class="d-flex jc-end a-it-center height70px">
-                            <button class="btn">Effettua l'upgrade</button>
-                        </div>
-                        
-
-                    </div>
-                    <div id="mainpage" class="debug">
-                        <ul>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                            <li>a</li>
-                        </ul>
-                    </div>
-    
-                </div>
-            </div>
-        </main>
-
-        <footer class="debug">
-            footer
-         </footer>
-    </body>
+    <body> 
+        <div class="debug app-container"> 
+        <!-- Sidebar --> 
+            <aside class="debug sidebar"> 
+                  <div class="debug logo"> 
+                    <img src="img/logo.svg" alt=""> 
+                  </div class="debug"> 
+                  <nav class="debug"> 
+                        <ul class="debug"> 
+                            <li><a href="#" class="white"><img src="img/home.svg" alt="" class="light-grey-filter">Home</a></li> 
+                            <li><a href="#" class="grey"><img src="img/search.svg" alt="" class="dark-grey-filter">Cerca</a></li> 
+                             <li><a href="#" class="grey"><img src="img/libreria.svg" alt="" class="dark-grey-filter">La tua libreria</a></li> 
+                        </ul> 
+                      </nav> 
+                      <div class="debug playlist-section"> 
+                          <h2>PLAYLIST</h2> 
+                          <div>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <span>Crea Playlist</span>
+                          </div>
+                          <ul class="playlists"> 
+                              <li>Nome Playlist</li> 
+                              <li>Nome Playlist</li> 
+                              <li>Nome Playlist</li> 
+                              <li>Nome Playlist</li> 
+                              <li>Nome Playlist</li> 
+                              <li>Nome Playlist</li>
+                          </ul> 
+                        </div> 
+                </aside> 
+                <!-- Main Content --> 
+                <main class="debug main-content"> 
+                      <div class="debug top-bar"> 
+                          <button class="upgrade-btn">Effettua l'upgrade</button> 
+                        </div> 
+                        <section class="debug recently-played"> 
+                              <h2>Recently Played</h2> 
+                              <div class="debug cards"> 
+                                  <div class="card">Heavy Metal</div> 
+                                  <div class="card">Stranger Things</div> 
+                                  <div class="card">A Quiet Place</div> 
+                                  <div class="card">Split</div> 
+                                  <div class="card">A Cure for Wellness</div> 
+                                </div> 
+                            </section>
+                            <section class="debug created-for-you"> 
+                                <h2>Creato per John Doe</h2> 
+                                  <div class="cards"> 
+                                  <div class="card">Release Radar</div> 
+                                  <div class="card">Daily Mix 1</div> 
+                                    </div> 
+                              </section> 
+                    </main> 
+                    <!-- Footer Player --> 
+                    <footer class="debug player-bar"> 
+                        <div class="debug song-info"> 
+                            riproduzione sx 
+                          </div> 
+                          <div class="debug controls"> 
+                              riproduzione centrale
+                          </div> 
+                          <div class="debug volume-control"> 
+                            riproduzione dx
+                          </div> 
+                      </footer> 
+          </div> 
+      </body>
 </html>
